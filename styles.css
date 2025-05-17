@@ -9,6 +9,19 @@ body {
   height: 100vh;
   flex-direction: column;
   overflow: hidden;
+  padding: 10px; /* Add a little padding for small screens */
+}
+
+.anton-regular {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.boldonse-regular {
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .centered {
@@ -20,6 +33,7 @@ body {
   letter-spacing: 10px;
   font-weight: bold;
   color: #ffffff;
+  word-break: break-word; /* prevent overflow */
 }
 
 .message {
@@ -28,11 +42,40 @@ body {
   color: #ccc;
 }
 
-.gif {
-  margin-top: 30px;
-  max-width: 90%;
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
+/* Smaller letter spacing on mobile for better fit */
+@media (max-width: 600px) {
+  .clock {
+    font-size: 15vw;
+    letter-spacing: 4px;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  .gif {
+    width: 200px;
+    max-width: 80%;
+    margin-top: 20px;
+  }
 }
 
+/* Extra small devices */
+@media (max-width: 350px) {
+  .clock {
+    font-size: 18vw;
+    letter-spacing: 2px;
+  }
+
+  .message {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  
+  .gif {
+    width: 200px;
+    margin-top: 15px;
+  }
+}
