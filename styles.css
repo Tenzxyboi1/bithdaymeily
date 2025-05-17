@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.centered {
+  text-align: center;
+}
+
+.clock {
+  font-size: 10vw;
+  letter-spacing: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.message {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.gif {
+  margin-top: 30px;
+  max-width: 90%;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
